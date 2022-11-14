@@ -29,6 +29,7 @@ dependencies {
 
     testImplementation 'io.rest-assured:rest-assured:5.2.0'
     testImplementation 'io.rest-assured:json-path:5.2.0'
+    testImplementation 'io.rest-assured:json-schema-validator:5.2.0'
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 }
