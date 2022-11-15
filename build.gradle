@@ -23,9 +23,9 @@ tasks.withType(JavaCompile) {
 }
 
 dependencies {
-    implementation 'org.json:json:20220320'
-    compileOnly('jakarta.enterprise:jakarta.enterprise.cdi-api:3.0.0')
-    compileOnly('jakarta.ws.rs:jakarta.ws.rs-api:3.0.0')
+    implementation 'org.json:json:20220924'
+    compileOnly('jakarta.enterprise:jakarta.enterprise.cdi-api:4.0.1')
+    implementation 'jakarta.ws.rs:jakarta.ws.rs-api:3.1.0'
     compileOnly('jakarta.servlet:jakarta.servlet-api:5.0.0')
 
     testImplementation 'io.rest-assured:rest-assured:5.2.0'

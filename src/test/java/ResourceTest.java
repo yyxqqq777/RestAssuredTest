@@ -1,8 +1,9 @@
+import cmu.edu.assignment1.HelloApplication;
+import cmu.edu.assignment1.Main;
 import org.json.JSONObject;
 import org.junit.jupiter.api.*;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
+import java.util.concurrent.TimeUnit;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -10,22 +11,11 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
 public class ResourceTest {
-    private static final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-    private static final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
-    private static final PrintStream originalOut = System.out;
-    private static final PrintStream originalErr = System.err;
-
     @BeforeAll
-    static void setup() {
-        System.setOut(new PrintStream(outContent));
-        System.setErr(new PrintStream(errContent));
+    public static void startInstance() throws Exception {
+        Main.main(null);
     }
 
-    @AfterAll
-    static void teardown() {
-        System.setOut(originalOut);
-        System.setErr(originalErr);
-    }
 
     @Test
     void testCurrent() {
