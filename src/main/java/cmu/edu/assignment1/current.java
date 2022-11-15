@@ -12,7 +12,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 @Path("/current")
-public class currentResource {
+public class current {
     @GET
     @Produces("application/json")
     public Response current() {

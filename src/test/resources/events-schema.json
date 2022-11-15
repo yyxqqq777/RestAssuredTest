@@ -1,0 +1,18 @@
+{
+  "events": [
+    {
+      "date": "2022-11-07",
+      "doctorId": "3acf2b08-d7a2-4937-80bf-82a4598f82bf",
+      "patientId": "c8303d2e-00c9-4fe8-b199-6efc6b842aae",
+      "id": "d80355fd-3a7b-4faa-b775-dbd671d4924c",
+      "desc": "test desc 1"
+    },
+    {
+      "date": "2022-11-07",
+      "doctorId": "3acf2b08-d7a2-4937-80bf-82a4598f82bf",
+      "patientId": "c8303d2e-00c9-4fe8-b199-6efc6b842aae",
+      "id": "626f964c-9ef0-4ded-8bff-705d00881645",
+      "desc": "test desc 2"
+    }
+  ]
+}
